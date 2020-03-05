@@ -1,5 +1,4 @@
 @import "vars";
-@import "libs";
 @import "fonts";
 @import "global";
 
@@ -10,7 +9,7 @@
 .header__slider {
   &-item {
     height: 100vh;
-    background-image: url(../img/header-bg.jpg);
+    background-image: url("../img/header-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -152,7 +151,7 @@
     left: 0;
     width: 11px;
     height: 13px;
-    background-image: url(../img/marker.svg);
+    background-image: url("../img/marker.svg");
   }
 }
 
