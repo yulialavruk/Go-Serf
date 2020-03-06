@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "normalize.css";
+import "animate.css";
 import "./scss/style.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

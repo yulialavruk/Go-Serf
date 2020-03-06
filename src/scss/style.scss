@@ -98,6 +98,30 @@
   color: #ffffff;
   opacity: 0.07;
 }
+.line-animation {
+  stroke-dashoffset: 600;
+  stroke-dasharray: 600;
+  animation: animdash 3s infinite 6s;
+}
+
+@keyframes animdash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.header__arrows {
+  position: absolute;
+  z-index: 3;
+  left: 230px;
+  bottom: 30px;
+}
+.header__map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
 .header__aside {
   position: absolute;
   top: 0;
