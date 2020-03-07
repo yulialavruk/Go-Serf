@@ -1,7 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  color: $white;
+  text-transform: uppercase;
+  background-color: #171919;
 }
 ul,
 li {
@@ -12,13 +25,18 @@ li {
 a {
   display: inline-block;
   text-decoration: none;
+  color: $white;
 }
-.suptitle-left {
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.headline-left {
   font-size: 22px;
   line-height: 32px;
   letter-spacing: 7.33333px;
-  text-transform: uppercase;
-  color: #ffffff;
   opacity: 0.5;
   padding-left: 103px;
   position: relative;
@@ -28,8 +46,48 @@ a {
     position: absolute;
     width: 80px;
     height: 1px;
+    background-color: $white;
     left: 0;
     top: 50%;
-    background-color: #ffffff;
+  }
+}
+.title {
+  span {
+    font-weight: 800;
+    font-size: 200px;
+    color: rgba($white, 0.02);
+    position: relative;
+    display: inline-block;
+    transform: translateX(-50px);
+  }
+  h3 {
+    margin: 0;
+    font-size: 80px;
+    font-weight: 800;
+    color: $white;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80px;
+      height: 1px;
+      background-color: $green;
+    }
+  }
+}
+.subtitle {
+  display: inline-block;
+  text-align: right;
+  &__head {
+    font-weight: 800;
+    font-size: 40px;
+    padding-right: 10px;
+    span {
+      font-weight: 100;
+    }
   }
 }

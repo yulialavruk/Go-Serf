@@ -84,11 +84,11 @@ export default class Sliders extends React.Component {
           {sliderList.map((item, index) => (
             <div className="header__slider-item slider-item" key={index}>
               <div className="slider-item__info">
-                <div className="slider-item__info-suptitle suptitle-left">
+                <div className="slider-item__info-suptitle headline-left">
                   Surf
                 </div>
                 <div className="slider-item__info-title">{item.title}</div>
-                <div className="slider-item__info-suptext suptitle-left">
+                <div className="slider-item__info-suptext headline-left">
                   Condition
                 </div>
                 <div className="slider-item__info-text">Radical</div>

@@ -22,8 +22,6 @@
   right: 80px;
   bottom: 115px;
   text-align: right;
-  color: #ffffff;
-  text-transform: uppercase;
 }
 .slider-item__info-suptitle {
   margin-bottom: 5px;
@@ -59,7 +57,6 @@
   bottom: 36px;
   max-width: 920px;
   width: 100%;
-  color: #ffffff;
   .slick-current {
     .dots-box {
       border-color: $green;
@@ -72,7 +69,7 @@
   justify-content: space-between;
   height: 25px;
   align-items: center;
-  border-top: 4px solid #ffffff;
+  border-top: 4px solid $white;
   &__number {
     font-weight: 800;
     font-size: 24px;
@@ -80,7 +77,7 @@
   }
   &__name {
     font-weight: 300;
-
+    text-transform: capitalize;
     line-height: 19px;
   }
 }
@@ -94,8 +91,6 @@
   font-weight: 800;
   font-size: 200px;
   line-height: 156px;
-  text-transform: uppercase;
-  color: #ffffff;
   opacity: 0.07;
 }
 .line-animation {
@@ -127,15 +122,13 @@
   top: 0;
   left: 0;
   z-index: 5;
-  border-right: 1px solid rgba(#fff, 0.25);
+  border-right: 1px solid rgba($white, 0.25);
   height: 100vh;
   text-align: center;
-  color: #fff;
 }
 .menu {
   margin-top: 20px;
   a {
-    color: #fff;
     span {
       display: block;
       font-weight: 500;
@@ -143,6 +136,7 @@
       line-height: 14px;
       letter-spacing: 3px;
       margin-bottom: 15px;
+      text-transform: capitalize;
     }
   }
 }
@@ -168,6 +162,7 @@
   letter-spacing: 1.05px;
   position: relative;
   padding-left: 19px;
+  text-transform: capitalize;
   &::before {
     content: "";
     position: absolute;
@@ -177,6 +172,19 @@
     height: 13px;
     background-image: url("../img/marker.svg");
   }
+}
+
+.surf {
+  padding: 160px 0 210px;
+  background-image: url("../img/surf-bg.png");
+  background-repeat: no-repeat;
+  background-position: right 200px;
+  background-size: auto;
+}
+.surf__subtitle {
+  text-align: right;
+  padding-right: 80px;
+  margin-top: -86px;
 }
 
 @import "media";
