@@ -1,32 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import cx from "classnames";
-import arrowsRight from "../../img/arrows-right.svg";
-import arrowsLeft from "../../img/arrows-left.svg";
-
-const PrevArrow = ({ style, onClick }) => {
-  return (
-    <img
-      className={cx("slider-arrows slider-arrows__left")}
-      src={arrowsLeft}
-      alt=""
-      style={style}
-      onClick={onClick}
-    />
-  );
-};
-
-const NextArrow = ({ style, onClick }) => {
-  return (
-    <img
-      className={cx("slider-arrows slider-arrows__rigth")}
-      src={arrowsRight}
-      alt=""
-      style={style}
-      onClick={onClick}
-    />
-  );
-};
+import { PrevArrow, NextArrow } from "../UIComponents/Arrows";
 
 const sliderList = [
   {
@@ -99,9 +73,9 @@ export default class Sliders extends React.Component {
             </div>
           ))}
         </Slider>
-        <Slider className="slider-dots" {...headerSlider2Settings}>
+        <Slider className="slider-dotshead" {...headerSlider2Settings}>
           {sliderList.map((item, index) => (
-            <div className="slider-dots__item" key={index}>
+            <div className="slider-dotshead__item" key={index}>
               <div className="dots-box">
                 <div className="dots-box__number">{item.number}</div>
                 <div className="dots-box__name">{item.title}</div>
