@@ -3,6 +3,7 @@ import arrowsRight from "../../img/arrows-right.svg";
 import Slider from "react-slick";
 import { PrevArrow, NextArrow } from "../UIComponents/Arrows";
 import beachList from "../../data/beachList";
+import Button from "../UIComponents/Button";
 
 export default class SurfSlider extends React.Component {
   constructor(props) {
@@ -105,10 +106,7 @@ export default class SurfSlider extends React.Component {
                     {item.country}
                   </div>
                   <div className="surf-box__inner-btn">
-                    <a href="/#" className="btn">
-                      view
-                      <span>surf</span>
-                    </a>
+                    <Button href="/#" desc="view" name="surf" />
                   </div>
                 </div>
               </div>
