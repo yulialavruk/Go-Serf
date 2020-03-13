@@ -6,7 +6,7 @@ import slide2 from "../img/slide-2.jpg";
 import slide3 from "../img/slide-3.jpg";
 import slide4 from "../img/slide-4.jpg";
 
-export default [
+export const BeachList = [
   {
     id: 1,
     title: "Malibu Beach",

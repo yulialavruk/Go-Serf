@@ -6,11 +6,14 @@ import Travel from "./Travel/Travel";
 export default class App extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <>
         <Header />
-        <Surf />
-        <Travel />
-      </React.Fragment>
+        <div className="container">
+          <Header />
+          <Surf />
+          <Travel />
+        </div>
+      </>
     );
   }
 }

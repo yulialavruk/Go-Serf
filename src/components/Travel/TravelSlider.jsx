@@ -2,7 +2,7 @@ import React from "react";
 import aviaLogo from "../../img/avia-logo.svg";
 import travelSlider from "../../img/travelslider-bg.png";
 import virgin from "../../img/virgin.png";
-import Button from "../UIComponents/Button";
+import { UILink } from "../UIComponents/UILink";
 import Slider from "react-slick";
 import { PrevArrow, NextArrow } from "../UIComponents/Arrows";
 
@@ -68,7 +68,7 @@ export default class TravelSlider extends React.Component {
             </div>
           </div>
           <div className="travel-slider__btn">
-            <Button href="/#" desc="Book" name="Flight" />
+            <UILink href="/#" desc="Book" name="Flight" />
           </div>
         </div>
         <div className="travel__slider-item travel-slider">
@@ -123,7 +123,7 @@ export default class TravelSlider extends React.Component {
             </div>
           </div>
           <div className="travel-slider__btn">
-            <Button href="/#" desc="Book" name="Flight" />
+            <UILink href="/#" desc="Book" name="Flight" />
           </div>
         </div>
       </Slider>

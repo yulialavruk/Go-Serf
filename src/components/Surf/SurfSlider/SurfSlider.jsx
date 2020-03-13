@@ -2,12 +2,12 @@ import React from "react";
 import arrowsRight from "../../img/arrows-right.svg";
 import Slider from "react-slick";
 import { PrevArrow, NextArrow } from "../UIComponents/Arrows";
-import beachList from "../../data/beachList";
-import Button from "../UIComponents/Button";
+import { BeachList } from "./BeachList";
+import { UILink } from "../UIComponents/UILink";
 
 export default class SurfSlider extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       nav1: null,
       nav2: null
@@ -92,7 +92,7 @@ export default class SurfSlider extends React.Component {
           ))}
         </Slider>
         <Slider className="surf-slider" {...surfSliderSettings}>
-          {beachList.map((item, index) => (
+          {BeachList.map((item, index) => (
             <div className="surf-slider__item" key={index}>
               <div
                 className="surf-box"
@@ -106,7 +106,7 @@ export default class SurfSlider extends React.Component {
                     {item.country}
                   </div>
                   <div className="surf-box__inner-btn">
-                    <Button href="/#" desc="view" name="surf" />
+                    <UILink href="/#" desc="view" name="surf" />
                   </div>
                 </div>
               </div>

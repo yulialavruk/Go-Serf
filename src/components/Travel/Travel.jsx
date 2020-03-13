@@ -3,7 +3,7 @@ import Title from "../UIComponents/Title";
 // import aviaLogo from "../../img/avia-logo.svg";
 // import travelSlider from "../../img/travelslider-bg.png";
 // import virgin from "../../img/virgin.png";
-// import Button from "../UIComponents/Button";
+// import { UILink } from "../UIComponents/UILink";
 import TravelSlider from "./TravelSlider";
 
 export default class Travel extends React.Component {
@@ -70,7 +70,7 @@ export default class Travel extends React.Component {
                 </div>
               </div>
               <div className="travel-slider__btn">
-                <Button href="/#" desc="Book" name="Flight" />
+                <UILink href="/#" desc="Book" name="Flight" />
               </div>
             </div>
           </div> */}
