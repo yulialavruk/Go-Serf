@@ -5,20 +5,20 @@ import SurfSlider from "./SurfSlider";
 export default class Surf extends React.Component {
   render() {
     return (
-      <div className="container">
-        <section className="surf">
+      <section className="surf">
+        <div className="container">
           <Title name="surf" />
           <div className="surf__subtitle">
             <div className="subtitle">
-              <div className="headline-left">Current location</div>
+              <div className="headline-left">Shore</div>
               <div className="subtitle__head">
-                California <span>|</span> USA
+                Airlie Beach <span>|</span> Australia
               </div>
             </div>
           </div>
           <SurfSlider />
-        </section>
-      </div>
+        </div>
+      </section>
     );
   }
 }
